@@ -1,0 +1,240 @@
+body{
+     background:linear-gradient(120deg, rgb(24, 25, 45),rgb(111, 196, 233),rgb(21, 49, 11));
+     display: flex;
+     font-family: Arial, sans-serif;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+}
+.contaner{
+     position: relative;
+     width: 90%;
+     height: 90vh;
+     background-color: rgb(18, 17, 35);
+     border-radius: 15px;
+     justify-content: center;
+     align-items: center;
+     max-width: 90%;
+     flex-wrap: wrap; /*Allows elements to wrap on smaller screens */
+     box-shadow:-20px 20px 30px  rgba(0, 0, 0, 0.7);
+     overflow: hidden;
+}
+.profile-container{
+    padding-left: 70px;
+}
+     
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white; 
+    padding-left: 50px;
+    border-bottom: 2px solid rgb(34, 69, 84) ;
+}
+.navbar .logo{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px; 
+    text-align: center; 
+}
+.navbar a:hover{
+    color: rgb(114, 196, 240)
+}
+.navbar .nav-links{
+    display: flex;
+}
+      /* text-section */
+.text-section{
+    width: 50vw;
+    /* padding: 40px; */
+    padding-top: 100px; 
+    word-spacing: 2px;
+    line-height: 1.8;
+}
+.text-section h1{
+    color: white;
+    font-size: 2em;
+}
+.text-section p{
+    /* font-weight: bolder; */
+    font-size: 1em;
+    color: white;
+   
+}
+    /* img-container with hexagon and glow effect */
+.img-container{
+    position: relative;
+    background-color: white;
+     left: 70%;
+     bottom: 42%; 
+   
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px -10px 50px rgba(27, 218, 218, 0.5); /* Glowing effect */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    flex-shrink: 0;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  /* Responsive media queries */
+@media (max-width: 700px) {
+    .contaner{
+        flex-direction: column; /* Stack text and img on smaller screens */
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .text-section{
+         margin-right: 0; /*Remove margin on smaller screens */
+         padding-left: 100px;
+        
+    }
+
+    .img-container{
+        margin-top: 20px;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        left: 138px;
+    }
+    .profile-container{
+       
+        padding-left: 2px;
+    }
+    .navbar a{
+        padding: 5px;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .text-section h1{
+        font-size: 1.4em;
+    }
+
+    .text-section p{
+        font-size: 1rem;
+    }
+
+    .img-container{
+        width: 200px; /* Make the image smaller */
+         height: 250px; /*  Adjust height proportionally */
+    }
+    .icon{
+        position: relative;
+        top: 450px;
+        right: 250px
+    }
+}
+   /* icon  */
+/* .icon1{
+    position: relative;
+    bottom: 17rem;
+    left: 4.2rem;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(65, 65, 227);
+    border-radius: 35px;
+}
+.icon2{
+    position: relative;
+    bottom: 17rem;
+    left: 4.2rem;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(186, 186, 194);
+    border-top-left-radius: 10px;
+    border
+} */
+   /* icon1  */
+.icon1 a svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+    transition: color 0.3s;
+  }
+  
+ .icon1 a svg:hover {
+    color: #E1306C; /* Instagram official pink color */
+  }
+.icon1{
+    position: relative;
+    bottom: 18rem;
+    left: 4rem;
+
+} 
+    /* icon2  */
+.icon2 svg {
+        width: 24px;
+        height: 24px;
+        stroke: white; /* Default white color */
+        fill: none;
+        transition: stroke 0.3s; /* Smooth color transition */
+      }
+      
+  .icon2 svg:hover {
+        stroke: #4267B2; /* Change to Facebook blue on hover */
+      }
+      
+.icon2{
+    position: relative;
+    bottom: 19.8rem;
+    left: 6rem;
+}
+   /* icon3 */
+.icon3 svg {
+    width: 24px;
+    height: 24px;
+    stroke: white; /* Default white color */
+    fill: none;
+    transition: stroke 0.3s; /* Smooth transition effect */
+  }
+  
+.icon3 svg:hover {
+    stroke: #1DA1F2; /* Twitter blue color on hover */
+  }
+.icon3{
+    
+    position: relative;
+    bottom: 21.4rem;
+    left: 8rem;
+}
+   /* icon4 */
+.icon4 svg {
+    width: 24px;
+    height: 24px;
+    stroke: white; /* Default white color */
+    fill: none;
+    transition: stroke 0.3s; /* Smooth color transition */
+  }
+  
+.icon4 svg:hover {
+    stroke: #0077B5; /* LinkedIn blue color on hover */
+  }
+.icon4{
+    position: relative;
+    bottom: 23.2rem;
+    left: 10.2rem;
+}
+  
+  
