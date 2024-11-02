@@ -46,7 +46,7 @@ body {
 }
 
 .box {
-    padding-left: 70px;
+    
 }
 
 .container {
@@ -133,4 +133,19 @@ ul a {
     margin: 10px;
     font-size: 16px;
     font-weight: lighter;
+}
+
+@media (max-width: 600px){
+    .navbar a{
+        padding: 7px;
+    }
+    footer{
+        overflow: hidden;
+    }
+    .foot-panel2{
+        padding-bottom: 60px;
+    }
+    .foot-panel3{
+        height: 450px;
+    }
 }
