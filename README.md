@@ -1,3 +1,4 @@
 # portfolio
 Aspiring Web Development with a passion for user-centered design and continuous learning.
-![image alt](https://github.com/tusharparjapat/portfolio/blob/7ee0c72cf68c85a2900f68a5b921dc69676d5152/me.jpg)
+
+![me](https://github.com/user-attachments/assets/6534acad-8c0d-43fc-958c-6908101ba836)
