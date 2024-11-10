@@ -23,7 +23,6 @@ body{
     font-size: 25px;
     text-decoration: none;
     font-size: 25px;
-    
 }
 .navbar a{
     color: white;
@@ -61,8 +60,8 @@ h2{
 }
 
 .project-card img {
-    max-width: 100%;
-    height: auto;
+    height: 30vh;
+    width: 40vw;
     border-radius: 5px;
 }
 
@@ -101,12 +100,11 @@ ul a{
     font-size: 16px;
     font-weight: lighter;
 }
-@media (max-width: 700px){
+@media (max-width: 600px){
     .navbar a{
-        padding: 6px;
+        padding: 7px;
     }
     .navbar .logo{
         font-size: 20px;
-        
     }
 }
