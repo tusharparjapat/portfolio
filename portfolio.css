@@ -71,7 +71,7 @@ body{
     color: white;
    
 }
-    /* img-container with hexagon and glow effect */
+     /* img-container with hexagon and glow effect */
 .img-container{
     position: relative;
     background-color: white;
@@ -87,11 +87,13 @@ body{
     align-items: center;
     box-shadow: 20px 20px 100px rgba(27, 218, 218, 0.5); /* Glowing effect */
     flex-shrink: 0;
-}
+} 
 .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+      
 }
 
   /* Responsive media queries */
@@ -104,8 +106,8 @@ body{
     }
     
     .text-section{
-         margin-right: 0; /*Remove margin on smaller screens */
-         padding-left: 100px;
+         margin-left: 0; /*Remove margin on smaller screens */
+         padding: 0;
         
     }
 
@@ -113,20 +115,25 @@ body{
         margin-top: 20px;
         flex-direction: column;
         position: relative;
-        top: 100px;
-        left: 138px;
+        
+        left: 27%;
     }
-    .profile-container{
-       
-        padding-left: 2px;
-    }
+   
     .navbar a{
         padding: 5px;
         
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+    .profile-container{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        right: 8vw;
+        top: 35%;
+    }
     .text-section h1{
         font-size: 1.4em;
     }
@@ -141,12 +148,23 @@ body{
     }
     .icon{
         position: relative;
-        top: 450px;
-        right: 250px
+
+        top: 25rem;
+        margin: 0;
+        padding: 0;
+        width: 0;
+    
+    }
+    
+}
+@media (max-width: 500px) {
+    .img-container{
+        position: relative;
+        bottom: 33rem;
     }
 }
-   /* icon  */
-/* .icon1{
+    icon  */
+  .icon1{
     position: relative;
     bottom: 17rem;
     left: 4.2rem;
@@ -164,9 +182,9 @@ body{
     background-color: rgb(186, 186, 194);
     border-top-left-radius: 10px;
     border
-} */
+} 
    /* icon1  */
-.icon1 a svg {
+.icon1 a svg { 
     color: white;
     width: 24px;
     height: 24px;
@@ -174,55 +192,56 @@ body{
   }
   
  .icon1 a svg:hover {
-    color: #E1306C; /* Instagram official pink color */
-  }
+    color: #E1306C; /* Instagram official pink color  */
+   } 
 .icon1{
     position: relative;
     bottom: 18rem;
     left: 4rem;
 
-} 
-    /* icon2  */
+ }  
+    /* /* icon2   */
 .icon2 svg {
         width: 24px;
         height: 24px;
-        stroke: white; /* Default white color */
+        stroke: white; /* Default white color  */
         fill: none;
-        transition: stroke 0.3s; /* Smooth color transition */
+        transition: stroke 0.3s; /* Smooth color transition  */
       }
       
   .icon2 svg:hover {
-        stroke: #4267B2; /* Change to Facebook blue on hover */
+         stroke: #4267B2; /* Change to Facebook blue on hover  */
       }
       
 .icon2{
     position: relative;
     bottom: 19.8rem;
     left: 6rem;
+    background: none;
 }
-   /* icon3 */
+   /* /* icon3  */
 .icon3 svg {
     width: 24px;
     height: 24px;
-    stroke: white; /* Default white color */
+    stroke: white; /* Default white color  */
     fill: none;
-    transition: stroke 0.3s; /* Smooth transition effect */
+    transition: stroke 0.3s; /* Smooth transition effect  */
   }
   
 .icon3 svg:hover {
-    stroke: #1DA1F2; /* Twitter blue color on hover */
+    stroke: #1DA1F2; /* Twitter blue color on hover  */
   }
 .icon3{
     
     position: relative;
-    bottom: 21.4rem;
+    bottom: 21rem;
     left: 8rem;
 }
-   /* icon4 */
+   /* /* icon4  */
 .icon4 svg {
     width: 24px;
     height: 24px;
-    stroke: white; /* Default white color */
+    stroke: white; /* Default white color  */
     fill: none;
     transition: stroke 0.3s; /* Smooth color transition */
   }
@@ -232,8 +251,8 @@ body{
   }
 .icon4{
     position: relative;
-    bottom: 23.2rem;
+    bottom: 22.7rem;
     left: 10.2rem;
 }
   
-  
+   
